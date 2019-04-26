@@ -2,7 +2,7 @@
 MNIST data set with multiple digits. We have generated a
 dataset for multiple digits recognition task from MNIST (http://yann.lecun.com/exdb/mnist/index.html).
 
-![](examples/train/2/10.png)
+![](examples/train/2/11.png)
 
 You can download generated data in release tab.
 See in `examples` folder:
