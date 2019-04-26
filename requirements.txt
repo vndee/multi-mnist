@@ -1,0 +1,4 @@
+numpy
+idx2numpy
+tqdm
+opencv-python
