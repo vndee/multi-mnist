@@ -88,7 +88,8 @@ def concat(a, b, overlap=True, intersection_scalar=0.2):
 
     for i in range(a.shape[0]):
         for j in range(a.shape[1]):
-            im[i][j] = a[i][j]
+            if not a[i][j] == 0:
+                im[i][j] = a[i][j]
 
     for i in range(b.shape[0]):
         for j in range(b.shape[1]):
