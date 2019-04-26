@@ -2,8 +2,8 @@
 MNIST data set with multiple digits. We have generated a
 dataset for multiple digits recognition task from MNIST (http://yann.lecun.com/exdb/mnist/index.html).
 <p align="center"> 
-	<img src="examples/train/5/40.png" width="500" height="100">
-  	<img src="examples/train/5/41.png" width="500" height="100">
+	<img src="examples/train/5/42.png" width="500" height="100">
+  	<img src="examples/train/5/46.png" width="500" height="100">
   	<img src="examples/train/8/70.png" width="800" height="100">
 </p>
 
