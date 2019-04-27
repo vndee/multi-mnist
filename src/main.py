@@ -12,8 +12,7 @@ output_dir = '../output'
 label_file = 'labels.csv'
 
 os.makedirs(output_dir, exist_ok=True)
-n_samples_train = [0, 10000, 10000, 30000, 30000, 100000, 100000, 100000, 100000]
-n_samples_test = [0, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000]
+n_samples = [100000, 100000, 100000, 100000, 1000000, 1000000, 2000000, 3000000, 4000000]
 
 cnt = 0
 number_of_samples_per_class = 10
@@ -185,14 +184,14 @@ if __name__ == '__main__':
 
     print('--------------Generate train set-----------------')
     writer = open(os.path.join(output_dir, 'train', label_file), 'w+')
-    for num_digits in range(2, 10):
-        generator(train_file, train_label, num_digits, n_samples_train[num_digits], writer, name='train')
+    for num_digits in range(1, 10):
+        generator(train_file, train_label, num_digits, n_samples[num_digits], writer, name='train')
     writer.close()
     print('-------------------------------------------------\n')
 
     print('--------------Generate test set------------------')
     writer = open(os.path.join(output_dir, 'test', label_file), 'w+')
-    for num_digits in range(2, 10):
-        generator(test_file, test_label, num_digits, n_samples_test[num_digits], writer, name='test')
+    for num_digits in range(1, 10):
+        generator(test_file, test_label, num_digits, n_samples[num_digits], writer, name='test')
     writer.close()
     print('-------------------------------------------------\n')
